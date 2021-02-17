@@ -1,0 +1,102 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Elementos base*/
+body{
+background: var(--preta);
+font-family:'Arial', Times, serif;
+color: white;
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 10px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: #fff;
+}
+/*elementos filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient( rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/aula_netflix/img/outlander.jpg'); /*melhora a visibilidade das letras (TANTO O TITULO COMO A DESCRIÇÃO*/
+   
+    height: 390px;
+    background-size: cover;
+
+    display: flex;
+    /*flex-direction: row; Por padrão*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo{
+    /*.fime-principal . titulo - esse poderia ser o começo aqui*/
+    margin-top: 15%;
+    font-size: 45px;
+    font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px; /* primeiro valor "cima e embaixo, o segundo é para os lados. Sempre no sentido horário*/
+    margin-right: 15px;/*fazer uma distância entre os botões*/
+    cursor: pointer; /*saber que existe um link ou algo pra clicar*/
+    transition: .4s ease all; /*delay para suavixar  a transição da mudança de cor*/
+}
+.botao:hover{
+    background-color: white; 
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    /*conceito de container/wrapper... onde mexer em um lugar e altera o layout de quem tá no container*/
+    margin-left: 22px;
+    margin-right: 10px;
+}
+.filme-principal .container{
+    width: 70%;
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrosel-filmes{
+
+    margin-top: 20px;
+}
